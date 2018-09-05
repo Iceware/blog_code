@@ -746,6 +746,7 @@ int main(int argc, char *argv[])
     PIN_SetSyntaxIntel();
 
     PIN_AddSyscallEntryFunction(Syscall_entry, 0);
+    PIN_AddSyscallExitFunction(Syscall_exit, 0);
 
     // Register Fini to be called when the application exits
     INS_AddInstrumentFunction(Instruction, 0);
