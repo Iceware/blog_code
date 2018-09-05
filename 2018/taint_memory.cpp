@@ -380,7 +380,7 @@ VOID ReadMem(UINT64 insAddr, std::string insStr, UINT32 opCount, REG reg_r, UINT
     //we only want to inspect mov instruction
     if (opCount != 2)
         return;
-    //compiled on ubuntu 18.04 with g++ 8.1
+    //compiled on ubuntu 18.04 with g++ 8.0.1
     //  a9d:	83 bd e0 fe ff ff 04 	cmpl   $0x4,-0x120(%rbp)
     //  aa4:	7f 47                	jg     aed <main+0xf4>
     //  aa6:	48 8b 85 e8 fe ff ff 	mov    -0x118(%rbp),%rax  |
